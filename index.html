@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js
+"></script>
+  </head>
+  <body>
+    <!-- Intro Page -->
+    <div id="intro">
+      <h1>🌤 Weather Forecasts</h1>
+      <button onclick="startApp()">Get Start</button>
+    </div>
+
+    <!-- Weather App -->
+    <div id="app">
+      <h1>Weather App</h1>
+      <input type="text" id="cityInput" placeholder="Enter city" />
+      <button class="search" onclick="getWeather()">Search</button>
+      <p id="error" class="error"></p>
+
+      <div id="current" class="weather-card"></div>
+      <h2>Hourly Forecast</h2>
+      <div id="hourly" class="forecast"></div>
+      <h2>Daily Forecast</h2>
+      <div id="daily" class="forecast"></div>
+    </div>
+  </body>
+</html>
